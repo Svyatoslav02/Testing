@@ -17,5 +17,10 @@ public class UiTests extends BaseTest{
         Assert.assertEquals(mainPage.getSubmitButtonText(), "Знайти");
     }
 
+    @Test
+    public void myTest3(){
+        Assert.assertNotEquals(mainPage.getSubmitButtonText(), "Знайти!");
+    }
+
 
 }
