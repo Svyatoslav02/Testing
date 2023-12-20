@@ -19,7 +19,7 @@ public class MainPage {
 
     public String getSubmitButtonText(){
         submitButton.shouldBe(visible);
-        return submitButton.getText();
+        //return submitButton.getText();
     }
 
 
