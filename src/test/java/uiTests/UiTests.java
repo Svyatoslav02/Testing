@@ -2,16 +2,17 @@ package uiTests;
 
 import com.codeborne.selenide.Selenide;
 import org.testng.Assert;
+import org.testng.annotations.Test;
 
-public class Test extends BaseTest{
+public class UiTests extends BaseTest{
 
-    @org.testng.annotations.Test
+    @Test
     public void myTest(){
         mainPage.inputStringForSearch("Asus");
         Selenide.sleep(2000);
     }
 
-    @org.testng.annotations.Test
+    @Test
     public void myTest2(){
         Assert.assertEquals(mainPage.getSubmitButtonText(), "Знайти");
     }
